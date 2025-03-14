@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    font-size: 1.25rem;
+    font-family: "Rubik";
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(160,126,255), rgb(121, 72, 253));
+}
+.main-con{
+   
+    flex-direction: column;
+    box-shadow: 10px  10px 10px rgb(0,0,0,0.6);
+    height: 350px;
+    width: 250px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    background-color: #666;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+} 
+h1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:rgb(208, 191, 255);
+    font-size: 1.75rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    
+    
+    
+}
+.in-log,.in-sing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+    padding: 7px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #999;
+    direction: rtl;
+}
+.in-log{
+    margin-top: 20px;
+    width: 90%;
+    
+
+}
+.in-sing{
+    width: 90%;
+}
+.login-con{
+    transform: translateY(80px);
+   
+}
+.singin-con{
+    opacity: 1;
+    transform: translateY(120px);
+    
+}
+.btn-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    background-color: #979797;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 12px;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+.btn-log:hover{
+    background-color: #777;
+}
