@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root{
-    --purple-- : rgb(160, 126, 255)
+    --purple : rgb(160, 126, 255)
 }
 body {
     font-size: 1.25rem;
@@ -20,7 +20,7 @@ body {
 }
 .login {
     border: solid 0.6mm;
-    border-color: var(--purple--);
+    border-color: var(--purple);
     border-radius: 10px;
     padding: 17px 5px;
     cursor: pointer;
@@ -45,7 +45,7 @@ a:-webkit-any-link {
     margin: 0px 12px;
     cursor: pointer;
     border: solid 2px;
-    border-color: var(--purple--);
+    border-color: var(--purple);
     padding: 17px 20px;
     border-radius: 12px 12px 12px 12px;
     transition: all 0.2s ease-in-out;
@@ -60,7 +60,7 @@ a:-webkit-any-link {
     padding: 13px;
 
     transition: all 0.2s ease-in-out;
-    border-bottom: 2px solid var(--purple--);
+    border-bottom: 2px solid var(--purple);
 }
 .home:hover {
     transform: translateY(-2px);
@@ -69,7 +69,7 @@ a:-webkit-any-link {
     margin: 0px 12px;
     cursor: pointer;
     padding: 13px;
-    border-bottom: 2px solid var(--purple--);
+    border-bottom: 2px solid var(--purple);
     transition: all 0.2s ease-in-out;
 }
 .servive:hover {
@@ -79,7 +79,7 @@ a:-webkit-any-link {
     margin: 0px 20px;
     cursor: pointer;
     padding: 13px;
-    border-bottom: 2px solid  var(--purple--);
+    border-bottom: 2px solid  var(--purple);
     transition: all 0.2s ease-in-out;
 }
 .support:hover {
@@ -89,7 +89,7 @@ a:-webkit-any-link {
 .card {
     margin: 0px 12px;
     cursor: pointer;
-    border: solid 2px var(--purple--);
+    border: solid 2px var(--purple);
     padding: 16px;
     border-radius: 12px 12px 12px 12px;
     transition: all 0.2s ease-in-out;
@@ -104,7 +104,7 @@ a:-webkit-any-link {
     height: 120vh;
 }
 .btn-cen {
-    background-color: var(--purple--);
+    background-color: var(--purple);
     border: none;
     color: white;
     padding: 10px;
@@ -145,6 +145,6 @@ a:-webkit-any-link {
     }
 }
 body.dark{
-    background-color: #000;
+    background-color: #242424;
     color: #fff;
 }
