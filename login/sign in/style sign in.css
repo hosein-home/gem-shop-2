@@ -68,6 +68,7 @@ h1{
     font-family: 'Rubik', Courier New, Courier, monospace;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
     font-size: clamp(5px, 1vw, 20px);
     transition: all 0.2s ease-in-out;
     color: rgb(9, 18, 58);
@@ -82,12 +83,16 @@ h1{
     text-decoration: none;
     color: rgb(201, 132, 29);
 }
-
+#test-sign-in{
+    color: rgb(100, 6, 6);
+    margin-top: 2%;
+    font-size: 0.8rem;
+}
 
 @media (max-width: 950px){
     .main{
         width: 70%;
-        height: 45vw;
+        height: 50vw;
     }
     .sign-in{
         height: 9%;
@@ -106,7 +111,7 @@ h1{
 @media (max-width : 600px) {
     .main{
         width: 70%;
-        height: 45vh;
+        height: 50vh;
     }
     .sign-in{
         height: 15%;
