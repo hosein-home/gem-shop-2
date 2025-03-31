@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root{
+    --purple-- : rgb(160, 126, 255);
+    --purple--low-- : rgb(134, 91, 255);
+}
+body{
+    font-family: "Rubik";
+    margin: 0;
+    padding: 0;
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    direction: rtl;
+    min-height: 100vh;
+}
+.sidebar{
+    background-color: var(--purple--);
+    padding: 10px;
+}
+
+.sidebar-item{
+    margin: 10px;
+}
+.sidebar-item img{
+    padding-top:5px ;
+}
+.sidebar-item a{
+    padding-bottom:5px ;
+}
+.main-content{
+    margin-bottom:5px;
+}
