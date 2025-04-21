@@ -1,27 +1,158 @@
 <!doctype html>
-<html lang="en">
-    <link rel="stylesheet" href="style.css" />
-
+<html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>G |</title>
+        <title>جم استور | GemStore</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+        <link rel="manifest" href="imgs/site.webmanifest">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header class="header">
-            <a href="login/login-page.html" class="login">ثبت نام</a>
-            <div class="night" id="night"><img src="imgs/moon.png" alt="" /></div>
-
-            <div class="home">خانه</div>
-            <div class="support">پشتیبانی</div>
-            <div class="servive">خدمات</div>
-
-            <div class="card"><img src="imgs/9306383401606428213-20.png" alt="" /></div>
+            <div class="mobile-menu-icon" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="logo">
+                <a href="#">جم استور</a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a class="home" href="#">خانه</a>
+                <a class="support" href="">پشتیبانی</a>
+                <a class="servive" href="">خدمات</a>
+                <a class="servive" href="dashboard/dashboard.html">داشبورد</a>
+            </nav>
+            
+            <div class="header-actions">
+                <a class="card" href="buy-page/buy.html"><img src="imgs/9306383401606428213-20.png" alt="" /></a>
+                <div class="night fas fa-moon" id="night"></div>
+                <a href="login/log-in.html" class="login">ثبت نام</a>
+            </div>
         </header>
-        <div class="main">
-            <button onclick="window.location.href='buy-page/buy.html'" class="btn-cen">شروع خرید</button>
+
+      
+        <div class="hero">
+            <div class="hero-content">
+                <h1>به جم استور خوش آمدید</h1>
+                <p>بهترین فروشگاه برای خرید جم و آیتم‌های بازی</p>
+                <button onclick="window.location.href='buy-page/buy.html'" class="btn-hero">شروع خرید</button>
+            </div>
         </div>
+
+      
+        <section class="benefits">
+            <div class="section-title">
+                <h2>چرا جم استور؟</h2>
+                <p>مزایای خرید از ما</p>
+            </div>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <i class="fas fa-bolt benefit-icon"></i>
+                    <h3>تحویل سریع</h3>
+                    <p>دریافت آنی محصولات پس از پرداخت</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt benefit-icon"></i>
+                    <h3>امنیت بالا</h3>
+                    <p>پرداخت امن و حفاظت از اطلاعات شخصی</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-headset benefit-icon"></i>
+                    <h3>پشتیبانی ۲۴/۷</h3>
+                    <p>همیشه آماده پاسخگویی به سوالات شما</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tags benefit-icon"></i>
+                    <h3>قیمت مناسب</h3>
+                    <p>بهترین قیمت‌ها در بازار</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="section-title">
+                <h2>نظرات مشتریان</h2>
+                <p>تجربه خرید از جم استور</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"خیلی خوب بود"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>علی محمدی</strong></p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"عالی"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>سارا احمدی</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="cta">
+            <h2>آماده شروع هستید؟</h2>
+            <p>بیا بخر</p>
+            <button onclick="window.location.href='login/log-in.html'" class="btn-cta">ثبت نام کنید</button>
+        </section>
+
+     
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>درباره ما</h3>
+                    <p>جم استور، بزرگترین فروشگاه آنلاین جم و آیتم‌های بازی در ایران</p>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های مفید</h3>
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">محصولات</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p><i class="fas fa-envelope"></i> info@gemstore.ir</p>
+                    <p><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,92 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root{
+    --purple-- : rgb(160, 126, 255);
+    --purple--low-- : rgb(134, 91, 255);
+}
 body{
-    font-size: 1.25rem;
-    font-family: "Rubik";
-    padding: 0;
-    margin: 0;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(90deg, rgb(160,126,255), rgb(121, 72, 253));
+    background: linear-gradient(90deg,var(--purple--),var(--purple--low--));
+    font-family: "Rubik", sans-serif;
+
 }
 .main-con{
-   
-    flex-direction: column;
-    box-shadow: 10px  10px 10px rgb(0,0,0,0.6);
-    height: 350px;
-    width: 250px;
-    transition: all 0.2s ease-in-out;
-    border-radius: 10px;
-    background-color: #666;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    
-} 
-h1{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color:rgb(208, 191, 255);
-    font-size: 1.75rem;
+    width: 700px;
+    height: 500px;
+    padding: 12px;
+    border-radius: 12px ;
+    background: linear-gradient(90deg,#888,#444);
+    box-shadow: 4px 4pX 8px 2px rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns:50% 0% 50%;
+}
+.pic-con{
     width: 100%;
-    padding: 0;
-    margin: 0;
-
-    
-    
+    height: 100%;
+    overflow: hidden;
     
 }
-.in-log,.in-sing{
+.main-conteiner-main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    
-    padding: 7px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #999;
-    direction: rtl;
-}
-.in-log{
-    margin-top: 20px;
-    width: 90%;
-    
+    height: 94vh;
+
 
 }
-.in-sing{
-    width: 90%;
-}
-.login-con{
-    transform: translateY(80px);
+.swiper-container {
+    width: 100%;
+    height: 100%;
    
-}
-.singin-con{
-    opacity: 1;
-    transform: translateY(120px);
     
 }
-.btn-log{
-    display: flex;
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    background: #000;
+    background-attachment: fixed;
+    box-shadow: 0 4pX 8px rgba(0, 0, 0, 0.2);
+    background-position: center;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    padding: 5px;
-    width: 90%;
-    background-color: #979797;
+  
+    border-radius: 12px;
+    
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.inf-con{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+    }
+
+
+.user-lastname-input,.user-name-input{
+    padding: 15px 20px;
+    background-color: #333;
     border: none;
-    border-radius: 5px;
+    width: 33.9%;
+    direction: rtl;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2em;
+    border-radius:6px ;
     outline: none;
+    color: #777;
+    
+}
+.user-lastname-input{
+    margin-left: 4px;
+}
+.email-field,.password-field{
+   padding: 15px 5px;
+   width: 90.5%;
+   margin-top: 10px;
+   color: #777;
+   background-color: #333;
+   border: none;
+   direction: rtl;
+   font-family: "Rubik", sans-serif;
+   font-size: 1.2em;
+   border-radius:6px ;
+   outline: none;
+    
+}
+.email-field:hover,.password-field:hover,.user-lastname-input:hover,.user-name-input:focus{
+    background-color: #222;
+    
+}
+.form-check{
+    margin-top: 20px;
+    margin-left: 65px
+}
+.creat-account{
+    width: 93%;
+    margin-top: 10px;
+    padding: 14px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #777;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
-    margin-right: 12px;
-    font-size: 1.25rem;
-    transition: all 0.2s ease-in-out;
 }
-.btn-log:hover{
-    background-color: #777;
-}
+

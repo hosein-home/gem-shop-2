@@ -1,3 +1,4 @@
+
 const cart = document.getElementById(".add-cart");
 const slide = document.querySelectorAll(".swiper-slide");
 const bg = document.getElementById("overlay");
@@ -39,5 +40,6 @@ let swiper = new Swiper('.swiper-container', {
     },
    
 });
+
 
 
