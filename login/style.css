@@ -6,7 +6,6 @@
 body{
     background: linear-gradient(90deg,var(--purple--),var(--purple--low--));
     font-family: "Rubik", sans-serif;
-
 }
 .main-con{
     width: 700px;
@@ -40,7 +39,6 @@ body{
 }
 
 .swiper-slide {
-    position: relative;
     text-align: center;
     background: #000;
     background-attachment: fixed;
@@ -48,7 +46,6 @@ body{
     background-position: center;
     justify-content: center;
     align-items: center;
-  
     border-radius: 12px;
     
 }
@@ -67,9 +64,20 @@ body{
     height: 100%;
     text-align: center;
     margin-top: 50px;
-    }
-
-
+}
+.inf-con h1{
+    font-size: 1.75rem;
+}
+#link-acount{
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+#link-acount:hover{
+    color: rgb(32, 141, 141);
+}
 .user-lastname-input,.user-name-input{
     padding: 15px 20px;
     background-color: #333;
@@ -106,7 +114,6 @@ body{
 }
 .form-check{
     margin-top: 20px;
-    margin-left: 65px
 }
 .creat-account{
     width: 93%;
@@ -120,4 +127,63 @@ body{
     border-radius: 6px;
     cursor: pointer;
 }
+#test-log-in{
+    color: rgb(138, 10, 10);
+}
+#label-check{
+    width: 150px;
+    font-size: 0.95rem;
+    direction: rtl;
+    text-align: center;
+    position: relative;  
+}
+#link-back{
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+#link-back:hover{
+    color: rgb(32, 141, 141);
+}
 
+@media (max-width : 720px){
+    .inf-con h1{
+        width: 300px;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .inf-con input{
+        height: 10px;
+        font-size: 0.75rem;
+    }
+    .user-name-input{
+        width: 33%;
+    }
+    .user-lastname-input{
+        width: 33%;
+    }
+    #label-check{
+        font-size: 0.85rem;
+    }
+    .pic-con{
+        display: none !important;
+        height: 0 !important;
+    }
+    .inf-con{
+        width: 100vw;
+    }
+    .main-con{
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center ;
+    }
+    .info-con{
+        margin-top: 20px;
+    }
+    .creat-account{
+        width: 100%;
+        display: block;
+    }
+}

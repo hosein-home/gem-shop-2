@@ -1,43 +1,23 @@
-const cart = document.getElementById(".add-cart");
-const slide = document.querySelectorAll(".swiper-slide");
-const bg = document.getElementById("overlay");
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
-slide.forEach(item => {
-    item.addEventListener("click", () => {
-        cart.style.display = "block";
-        bg.style.display = "block";
-       
+function moveSlide(step) {
+  currentIndex += step;
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  } else if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  }
 
-    })
-})
+  updateSliderPosition();
+}
 
-let nightBtn = document.getElementById("night");
-let body = document.body;
+function updateSliderPosition() {
+  const slider = document.querySelector('.slider');
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-nightBtn.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    if(body.classList.contains("dark")){
-        localStorage.setItem("dark", true);
-    } else{
-        localStorage.setItem("dark", false);
-    }
-
-})
-if(localStorage.getItem("dark") === "true"){
-    body.classList.add("dark");
-} 
-let swiper = new Swiper('.swiper-container', {
-    loop : true,
-    spaceBetween: 20,
-    slidesPerView: 3,
-    autoplay: {
-        delay: 3000,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-   
-});
-
-
+setInterval(() => {
+  moveSlide(1);
+}, 4000);

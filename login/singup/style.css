@@ -38,7 +38,6 @@ body{
    
     
 }
-
 .swiper-slide {
     position: relative;
     text-align: center;
@@ -48,11 +47,10 @@ body{
     background-position: center;
     justify-content: center;
     align-items: center;
-  
+    
     border-radius: 12px;
     
 }
-
 .swiper-slide img {
     width: 100%;
     height: 100%;
@@ -67,9 +65,10 @@ body{
     height: 100%;
     text-align: center;
     margin-top: 50px;
-    }
-
-
+}
+.inf-con h1{
+    font-size: 1.85rem;
+}
 .user-name-input{
     padding: 15px 4px;
     background-color: #333;
@@ -106,7 +105,7 @@ body{
 }
 .form-check{
     margin-top: 20px;
-    margin-left: 65px
+    margin-bottom: 10px;
 }
 .creat-account{
     width: 93%;
@@ -120,5 +119,79 @@ body{
     border-radius: 6px;
     cursor: pointer;
 }
-
-
+#link-account{
+    color: black;
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#link-account:hover{
+    color: rgb(32, 141, 141);
+}
+#test-sign-in{
+    color: rgb(107, 8, 8);
+}
+#link-back{
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+#link-back:hover{
+    color: rgb(32, 141, 141);
+}
+.form-check-label{
+    font-size: 0.97rem;
+}
+@media (max-width : 720px){
+    .inf-con h1{
+        width: 300px;
+        font-size: 1.7rem;
+        margin: auto;
+    }
+    #link-account{
+        position: relative;
+        top: 46vh;    
+    }
+    .inf-con input{
+        height: 10px;
+        font-size: 0.75rem;
+    }
+    .user-name-input{
+        width: 33%;
+    }
+    .user-lastname-input{
+        width: 33%;
+    }
+    #label-check{
+        font-size: 0.85rem;
+    }
+    .pic-con{
+        display: none !important;
+        height: 0 !important;
+    }
+    .inf-con{
+        width: 100vw;
+    }
+    .main-con{
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center ;
+    }
+    .info-con{
+        margin-top: 20px;
+    }
+    .user-name-input{
+        width: 91%;
+    }
+}
+@media (max-width: 370px){
+    #link-account{
+        top: 48vh;    
+    }
+    .inf-con h1{
+        font-size: 1.5rem;
+    }
+}

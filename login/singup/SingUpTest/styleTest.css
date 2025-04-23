@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background: linear-gradient(45deg, rgb(160, 126, 255), rgb(134, 91, 255));
+    font-family: 'Rubik', Courier New, Courier, monospace;
+    transition: opacity 1s ease-in-out;
+}
+body.fade-in{
+    opacity: 1;
+}
+body.fade-out{
+    opacity: 0;
+}
+.main{
+    width: 50%;
+    max-width: 800px;
+    height: 50vh;
+    min-height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+    background: linear-gradient(45deg, rgba(53, 26, 78, 0.25), rgba(18, 18, 102, 0.25));
+    border-radius: 10px;
+    box-shadow: 10px  10px 10px rgb(0,0,0,0.6);
+}
+h1{
+    font-size: clamp(20px, 2vw, 50px);
+    color:rgb(201, 132, 29);
+    margin-top: 10%;
+}
+#a-tag{
+    margin-top: 15%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(90, 10, 10);
+}
+
+@media (max-width: 600px){
+    .main{
+        width: 70%;
+    }
+}
+@media (max-width: 450px){
+    .main{
+        width: 90%;
+        height: 35vh;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    #a-tag{
+        font-size: 1rem;
+    }
+}
+
